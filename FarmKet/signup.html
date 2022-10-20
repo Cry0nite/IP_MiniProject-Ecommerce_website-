@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmket</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/log.css">
+
+</head>
+
+<body>
+
+    <div class="left-arror">
+        <h1 class="heading">
+            <span>
+                <a href="login.html">
+                    <div class="fa fa-arrow-left" style="color: white;" aria-hidden="true"></div>
+                </a>
+            </span>
+        </h1>
+    </div>
+
+    <div class="container">
+        <h1 class="heading"><span>Signup</span></h1>
+        <form method="post" action="send.php">
+            <div class="field email-field">
+                <div class="input-field">
+                    <input type="email" name='email' placeholder="Enter your email" class="email">
+                </div>
+                <span class="error email-error">
+                    <i class="bx bx-error-circle error-icon"></i>
+                    <p class="error-text">Please enter a valid email</p>
+                </span>
+            </div>
+            <div class="field create-password">
+                <div class="input-field">
+                    <input type="password" name='pass' placeholder="Create password" class="password">
+                    <i class="bx bx-hide show-hide"></i>
+                </div>
+                <span class="error password-error">
+                    <i class="bx bx-error-circle error-icon"></i>
+                    <p class="error-text">
+                        Please enter atleast 8 character with number, symbol, small and
+                        capital letter.
+                    </p>
+                </span>
+            </div>
+            <div class="field confirm-password">
+                <div class="input-field">
+                    <input type="password" name='cpass' placeholder="Confirm password" class="cPassword">
+                    <i class="bx bx-hide show-hide"></i>
+                </div>
+                <span class="error cPassword-error">
+                    <i class="bx bx-error-circle error-icon"></i>
+                    <p class="error-text">Password don't match</p>
+                </span>
+            </div>
+            <div class="field create-phonenumber">
+                <div class="input-field">
+                    <input type="tel" name='phone' placeholder="Phone Number" class="phoneno">
+                    <i class="bx bx-hide show-hide"></i>
+                </div>
+            </div>
+            <div class="input-field button">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <div class="right-arror">
+        <h1 class="heading">
+            <span>
+                <a href="index.html">
+                    <div class="fa fa-arrow-right" style="color: white;" aria-hidden="true"></div>
+                </a>
+            </span>
+        </h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script/log.js"></script>
+
+</body>
+
+</html>
